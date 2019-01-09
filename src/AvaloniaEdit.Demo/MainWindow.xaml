@@ -12,10 +12,16 @@
             <Button Name="addControlBtn" Content="Add Button" />
             <Button Name="clearControlBtn" Content="Clear Buttons" />
         </StackPanel>
-        <AvalonEdit:TextEditor Name="Editor"
+        <Grid RowDefinitions="*,10,*">
+            <Panel Background="Red"/>
+            <GridSplitter Grid.Row="1" />
+            <AvalonEdit:TextEditor Name="Editor" Grid.Row="2"
                                Margin="30"
+                               FontFamily="Consolas"
                                HorizontalScrollBarVisibility="Auto"
                                VerticalScrollBarVisibility="Visible"
-                               TextBlock.FontSize="30" />
+                               TextBlock.FontSize="14" />
+        </Grid>
+        
     </DockPanel>
 </Window>
